@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    background-color: darkorchid;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    border: 5px solid;
+    border-color: black  transparent black black;
+    animation-name: turning;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes turning {
+    to{
+        -o-transform: rotate(1turn);
+        -webkit-transform: rotate(1turn);
+        -moz-transform: rotate(1turn);
+        -ms-transform: rotate(1turn);
+        transform: rotate(1turn);
+}
+}

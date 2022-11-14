@@ -31,10 +31,10 @@ div:hover {
 div::after {
     content: '';
     position: absolute;
-    width: 125%;
-    height: 125%;
-    top: -10px;
-    left: -10px;
+    width: 150%;
+    height: 150%;
+    top: -15px;
+    left: -15px;
     border: 5px solid;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -47,10 +47,10 @@ div::after {
 div::before {
     content: '';
     position: absolute;
-    width: 150%;
-    height: 150%;
-    top: -15px;
-    left: -15px;
+    width: 200%;
+    height: 200%;
+    top: -25px;
+    left: -25px;
     border: 5px solid;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
