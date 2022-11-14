@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    background-color: darkgray;
+    width: 50px;
+    height: 50px;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    margin: 50px auto;
+    border: 5px solid;
+    border-color: fuchsia fuchsia fuchsia transparent;
+    position: relative;
+    animation-name: loadingPage;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+
+div:hover {
+    animation-play-state: paused;
+}
+
+div::after {
+    content: '';
+    position: absolute;
+    width: 125%;
+    height: 125%;
+    top: -10px;
+    left: -10px;
+    border: 5px solid;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border-color: cornflowerblue cornflowerblue transparent cornflowerblue;
+}
+
+div::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -15px;
+    left: -15px;
+    border: 5px solid;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border-color: chocolate transparent chocolate chocolate;
+}
+
+@keyframes loadingPage {
+    to {
+        -o-transform: rotate(1turn);
+        -webkit-transform: rotate(1turn);
+        -moz-transform: rotate(1turn);
+        -ms-transform: rotate(1turn);
+        transform: rotate(1turn);
+}
+}
